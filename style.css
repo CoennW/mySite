@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    place-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1366px;
+    height: auto;
+    
+    border-width: 0px 1px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    position: relative;
+}
+
+header {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    height: 110px;
+    display: flex;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header::after {
+    content: "";
+    width: calc(100% + 20px);
+    height: 400px;
+    position: absolute;
+    overflow: visible;
+    z-index: -1;
+    background-color: white;
+    left: -10px;
+    
+}
+
+.header-content h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+ ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-content li {
+    font-weight: 800;
+    font-size: 1.0625rem;
+    display: inline-block;   
+    border-right: 2px solid black;
+    padding: 0px 10px;
+}
+
+.header-content li:last-child {
+    border-right: 0px solid black;
+}
+
+.header-content li:first-child {
+    padding-left: 0;
+}
+
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #59FF92;
+}
+
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    height: 600px;
+    margin-top: 110px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero h1::before {
+    z-index: -1;
+    position: relative;
+    display: block;
+    content: "junior";
+    font-weight: bolder;
+    color: #59FF92;
+    font-size: 1rem;
+    top: 25px;
+    right: -35px;
+}
+
+#heroText {
+    width: 500px;
+}
+
+#myEyes { 
+    width: auto;
+    height: 198px;
+    margin-left: 80px;
+}
+
+#myEyes img {
+    width: auto;
+    height: 100%;
+}
+
+section{ 
+    margin-top: 50px;
+    position: relative;
+}
+
+.accent {
+    color: #59FF92;
+}
+
+/*///////////////// HORIZONTAL SCROLLING CARDS ///////////////////*/
+.scrolling-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+
+
+
+  .scrolling-wrapper::-webkit-scrollbar-track
+{
+	
+	background-color: #ffffff;
+}
+
+.scrolling-wrapper::-webkit-scrollbar
+{
+    
+	height: 6px;
+	background-color: #F5F5F5;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb
+{
+	background-color: #c0c0c0;
+    border-radius: 3px;
+}
+
+  .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 350px;
+    height: 390px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px 10px 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(189, 189, 189);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+
+    box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.25);
+  }
+
+  .card h2 {
+    margin: 20px;
+  }
+
+  .card ul {
+      margin: 20px;
+  }
+
+  .card li {
+      margin-top: 3px;
+  }
+
+  .card p { 
+    margin: 20px;
+    
+  }
+
+  .card .reveal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .scrolling-title {
+    background-color: rgba(61, 120, 66, 0.1);
+    border-radius: 3px;
+    width: fit-content;
+    padding: 20px 50px 30px 10px;
+    margin-bottom: -20px;
+    margin-left: 10px;
+      
+  }
+
+  .scrolling-title  { 
+    font-size: 36px;
+  }
+
+.button-container {
+    width: 110%;
+    position: absolute;
+    top: 50%;
+    margin-left: -5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    background-color: #00000044;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;   
+}
+
+.demo-link {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin: 15px;
+}
+
+.demo-link p {
+   margin: 0;
+}
+
+.demo-link img {
+    width: 36px;
+}
+
+.demo-link div {
+    margin-left: 10px;
+}
+
+.reveal:hover {
+    animation: reveal 0.2s ease-in-out ;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    }
+}
