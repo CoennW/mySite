@@ -8,38 +8,38 @@
     <script src="main.js"></script>
     <title>coen walter</title>
 </head>
-<body>
+<body> 
     <div class=content-container>
 
         <header>   
             <div class="header-content">
                 <h1>coen walter. webdeveloper</h1>
                 <ul>
-                    <li><a href="#">me</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">skills</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#me">me</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </header> 
 
         <div class="hero">
+            
             <div id="heroText">
                 <h1>
                     webdeveloper looking for work
                 </h1>
-                <p>
-                    i may already contacted you to try to solve this problem
-                </p>
+               
             </div>
             <div id="myEyes">
-                <img src="img/Naamloos-1.png" alt="">
+                <img src="img/me.png" alt="">
             </div>
         </div>
 
 
         <!--THINGS I KNOW-->
-        <section >
+     
+        <section id="skills">
             <h1 class="scrolling-title">
                 things i know
             </h1>
@@ -113,7 +113,8 @@
 
 
         <!--THINGS I MADE FROM SCRATCH-->
-        <section >
+   
+        <section id="work">
             <h1 class="scrolling-title">
                 things i made from scratch
             </h1>
@@ -193,7 +194,8 @@
         </section>
 
           <!--ME AND THE THINGS I LIKE-->
-          <section >
+       
+          <section id="me">
             <h1 class="scrolling-title">
                 me and the thing i like
             </h1>
@@ -248,24 +250,38 @@
         </section>
 
         <!--CONTACT INFORMATION-->
-        <section >
+        <section id="contact">
             <h1 class="scrolling-title">
-                me and the thing i like
+                my contact information
             </h1>
             <div class="button-container">
                 <button id="slideLeft" type="button"><</button>
                 <button id="slideRight" type="button">></button>
               </div>    
             <div class="scrolling-wrapper" id="horizontal">
+                <div class="card" style="background-color: #2F2F2F">
+                    <h2>contact</h2>
+                    <ul>
+                        <li class="accent">email</li>
+                        <li>coen_walter@hotmail.com</li>
+                    </ul>
+                    <ul>
+                        <li class="accent">phone</li>
+                        <li>+31 6 117 23 197</li>
+                    </ul>
+                    <ul>
+                        <li class="accent">location</li>
+                        <li>tilburg - the netherlands</li>
+                    </ul>
+                </div>    
 
-                <div class="card" style="background-image: url('img/work/self.png')">
-                    <div class="reveal">
-                        <h2>coen walter</h2>
-                        <p>Hi! My name is Coen. I know how to put things on the web while making sure people want to use it. 
-                        I’ll even make it pleasant for the eye.</p>
-                        <p>On this site you’ll get to know me a little bit better.  You can even send me a message! </p>
-                        <p class="accent">It’s incredible.</p>
-                    </div>
+                <div class="card" style="background-color: #2F2F2F">
+                    <h2 style="margin-bottom: 0px;">send me a message</h2>
+                    <p class="accent" style="margin-top: 0px;">and let me know how to contact you</p>
+                    <form action="https://getform.io/f/3b1f2cb8-9f22-406c-8240-c30410fc2c69" method="POST">
+                        <textarea type="text" name="message" id="textfield" placeholder="leave a number or email :)" required></textarea>
+                        <button type="submit" id="sendBtn">send</button>
+                    </form>
                 </div>    
 
             </div>
@@ -275,7 +291,11 @@
       
 
         <div class="footer">
-
+            <h1>born in nijmegen, <br>
+                grown in oss, <br>
+                studied in tilburg, <br>          
+                to be continued
+            </h1>
         </div>
 
     </div>    
