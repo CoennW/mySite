@@ -109,27 +109,27 @@ a:hover {
     display: block;
     content: "junior";
     font-weight: bolder;
-    color: #59FF92;
+    color: #c4320d;
     font-size: 1rem;
-    top: 25px;
-    right: -35px;
+    top: 20px;
+    right: -175px;
 }
 
 #heroText {
     position: relative;
-    
     max-width: 500px;
 }
 
 #myEyes  {
     position: relative;
-    width: 50%;
-  
+   width: 50%;
+   
 }
 
 #myEyes img {
     max-width: 100%;
-    min-width: 50%;
+    max-height: 70vh;
+    border-radius:  25px;
 }
 
 section{ 
@@ -209,7 +209,7 @@ margin: 20px;
 
 .card .reveal{
 position: absolute;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.8);
 height: 100%;
 width: 100%;
 border-radius: 10px;
@@ -268,6 +268,9 @@ font-size: 36px;
 
 .demo-link img {
     width: 36px;
+    animation: link infinite 4s ease-out;
+    
+   
 }
 
 .demo-link div {
@@ -309,7 +312,7 @@ form #sendBtn {
    
     padding: 20px 20px 100px 20px;
     background-color: #234E22;
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     color: white;   
 }
 
@@ -325,6 +328,33 @@ form #sendBtn {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes link {
+    0%{
+        transform: scale(1);
+    }
+    2%{
+        transform: scale(1.4);
+    }
+    4%{
+        transform: scale(1);
+    }
+    6%{
+        transform: scale(1.2);
+    }
+    8%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(1.1);
+    }
+    12%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -356,7 +386,7 @@ form #sendBtn {
 
     .hero h1::before {
         top: 16px;
-        right: -15px;
+        right: -130px;
     }
 
     #myEyes {
