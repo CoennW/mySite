@@ -90,11 +90,9 @@ a:hover {
 
 .hero {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     height: calc(100vh - 110px);
-    margin-top: -50px;
     
 }
 
@@ -117,19 +115,13 @@ a:hover {
 
 #heroText {
     position: relative;
-    max-width: 500px;
+    max-width: 50%;
 }
 
 #myEyes  {
     position: relative;
-   width: 50%;
-   
-}
-
-#myEyes img {
-    max-width: 100%;
-    max-height: 70vh;
-    border-radius:  25px;
+    max-width: 50%;
+    border-radius: 20px;
 }
 
 section{ 
@@ -366,43 +358,44 @@ form #sendBtn {
 
 
 @media (max-width: 1030px) {
-    .hero {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items:center;
-        justify-content:space-evenly;
-        height: calc(100vh - 110px);
-        margin-top: -50px;
-        flex-grow: 1;
-        
-    }
+   
+
 
     #heroText h1 {
         font-size: 3em;
-        margin-top: -300px;
+        
     }
+
+    #heroText {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    
+    #myEyes {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+ 
 
     .hero h1::before {
         top: 16px;
         right: -130px;
     }
 
-    #myEyes {
-        position: absolute;
-     
-        min-width: 500px;
-        bottom: 0;
-        z-index: -1;
+   
+    .hero{
         
-        
+        display: inline-block;
+        width: 100%;
+       
     }
 
+  
     
 
 
-    body{
+    html,body{
         width: 100%;
         overflow-x: hidden;
     }
