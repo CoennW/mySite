@@ -376,6 +376,16 @@ form #sendBtn {
         max-height: 100%;
     }
 
+    .first-card::before {
+        position: absolute;
+        content: url('./img/round_touch_app_white_24dp.png');
+        top: 10px;
+        left: 10px;
+        background-color: rgb(0, 0, 0, 0.5);    
+        border-radius: 10px;
+        padding: 10px;
+    }
+
  
 
     .hero h1::before {
